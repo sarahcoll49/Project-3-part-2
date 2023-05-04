@@ -102,12 +102,6 @@ opacity: 1;
   margin: 0 25px;
   transition: all .45s ease;
 }
-.navlist a:hover{
-  color: blue;
-}
-.navlist a.active{
-color: rgb(0, 0, 0);
-}
 #menu-icon{
   font-size: 35px;
   color: rgb(0, 102, 102);
@@ -224,12 +218,6 @@ span{
   margin: 0 25px;
   transition: all .45s ease;
 }
-.navlist a:hover{
-  color: blue;
-}
-.navlist a.active{
-color: rgb(0, 0, 0);
-}
 #menu-icon{
   font-size: 35px;
   color: rgb(1, 97, 97);
@@ -305,12 +293,6 @@ span{
   font-weight: 500;
   margin: 0 25px;
   transition: all .45s ease;
-}
-.navlist a:hover{
-  color: blue;
-}
-.navlist a.active{
-color: rgb(0, 0, 0);
 }
 #menu-icon{
   font-size: 35px;
@@ -403,12 +385,6 @@ span{
   font-weight: 500;
   margin: 0 25px;
   transition: all .45s ease;
-}
-.navlist a:hover{
-  color: blue;
-}
-.navlist a.active{
-color: rgb(0, 0, 0);
 }
 #menu-icon{
   font-size: 35px;
@@ -520,12 +496,6 @@ span{
   font-weight: 500;
   margin: 0 25px;
   transition: all .45s ease;
-}
-.navlist a:hover{
-  color: blue;
-}
-.navlist a.active{
-color: rgb(0, 0, 0);
 }
 #menu-icon{
   font-size: 35px;
@@ -679,23 +649,15 @@ background: whitesmoke;
     display: block;
   }
   .navlist{
-    position: absolute;
-    top: 100%;
-    right: -100%;
-    width: 270px;
-    height: 44vh;
-    display: flex;
-    flex-direction: column;
-    background: rgb(1, 91, 91);
-    text-align: left;
-    transition: all .45s ease;
-    justify-self: start;
-    border-radius: 10px;
-    transition: all .45s ease;
+    color: green;
+    max-height: 100vh;
+    visibility: hidden;
+    overflow: hidden;
+    padding: 0 20px;
   }
   .navlist a{
     display: block;
-    margin: 17px 0;
+    margin: 7px 0;
     padding: 0px 25px;
     font-size: 20px;
     transition: all .45s ease;
@@ -709,8 +671,10 @@ background: whitesmoke;
     color: whitesmoke;
   }
   .navlist.open{
-    top: 100%;
-    right: 2%;
+    max-height: 100vh;
+    visibility: visible;
+    opacity: 1;
+    padding: 20px;
   }
 }
 
